@@ -1,2 +1,4 @@
 sudo pacman -S --noconfirm neovim lua51 luarocks
 sudo luarocks install luacheck
+[ -d "/path/to/your/directory" ] && rm -rf $HOME/.config/nvim/* || mkdir $HOME/.config/nvim/
+mv lua ./init.lua ./lua ./test.lua ./lazy-lock.json $HOME/.config/nvim/
